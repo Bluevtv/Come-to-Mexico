@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Webpage</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+
+<style>
+body {
+  font-family: "Nunito", serif;
+  background: rgb(135,180,129);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+ul, ol {
+  text-align: left;
+}
+
+img {
+  border-radius: 15px;
+}
+
+/* Image gallery styling */
+.myDiv {
+  background-color: rgb(63,120,96);
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.myDiv figure {
+  width: 300px;
+  margin: 0;
+  text-align: center;
+}
+
+.myDiv img {
+  width: 100%;
+  height: auto;
+}
+
+/* Full-width title box */
+.title-box {
+  background-color: rgb(100,190,192);
+  font-size: 30px;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Sticky nav */
+.nav-box {
+  background-color: rgba(115,150,170,0.8);
+  backdrop-filter: blur(8px);
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-box a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Main image with subtle hover grow */
+.main-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  border-radius: 15px;
+  transition: transform 0.3s ease; /* smooth grow on hover */
+  cursor: pointer;
+}
+
+.main-image:hover {
+  transform: scale(1.08); /* subtle 8% growth on hover */
+}
+
+section, p {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+/* ✅ FIXED Thank You Box */
+.thank-you-box {
+  background-color: rgb(100,190,192);
+  padding: 30px;
+  text-align: center;
+  border-radius: 0;     /* removed rounded corners */
+  margin: 0;            /* removes side gaps */
+  width: 100%;          /* full width */
+  max-width: none;      /* removes 800px limit */
+  box-sizing: border-box;
+}
+
+.thank-you-box hr {
+  border: 0;
+  height: 2px;
+  background-color: rgb(113,121,141);
+  margin: 20px 0;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="title-box">
+  <h1>Come to Mexico!</h1>
+</div>
+
+<div class="nav-box">
+  <a href="#Why Mexico?">Why Mexico?</a>
+  <a href="#Top Things to do">Top Things to do</a>
+  <a href="#Travel Tips">Travel Tips</a>
+</div>
+
+<!-- Main image wrapped in link to Wikipedia -->
+<a href="https://en.wikipedia.org/wiki/Mexico_City_Metropolitan_Cathedral" target="_blank">
+  <img 
+    class="main-image" 
+    src="https://i.natgeofe.com/n/6c02ad5a-977b-4f12-b9c0-02ffb0736e07/metropolitan-cathedral-zocalo-mexico-city_16x9.JPG?w=1200" 
+    alt="Metropolitan Cathedral in Mexico City">
+</a>
+
+<p>Metropolitan Cathedral in Mexico</p>
+
+<section id="Why Mexico?">
+<h2>Why Mexico?</h2>
+
+<div class="myDiv">
+  <figure>
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/b8/ce/35/caption.jpg">
+    <figcaption>Beach in Mexico</figcaption>
+  </figure>
+
+  <figure>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1280px-Flag_of_Mexico.svg.png">
+    <figcaption>Mexico Flag</figcaption>
+  </figure>
+
+  <figure>
+    <img src="https://cdn.britannica.com/60/92960-050-327CF926/pyramid-Mayan-Chichen-Itza-Mex.jpg">
+    <figcaption>Aztec Pyramid</figcaption>
+  </figure>
+</div>
+
+<p>Mexico is the best getaway destination for its incredible food, and stunning landscapes ranging from Caribbean beaches to lush green jungles. Whether you want to explore ancient ruins or relax at a world-class resort, its warm hospitality with great food, affordability, and landscapes make it a perfect escape for any traveler.</p>
+
+<ul>
+<li>World-Class Beaches</li>
+<li>Extraordinary Food</li>
+<li>Vibrant Festivals</li>
+<li>Beautiful Landscapes</li>
+<li>Adventurous Activities</li>
+</ul>
+</section>
+
+<section id="Top Things to do">
+<h2>Top Things to Do</h2>
+<p>Mexico offers a diverse mix of ancient Maya and Aztec ruins (Chichén Itzá, Teotihuacan), stunning Caribbean beaches, and vibrant urban culture in Mexico City, featuring world-class museums and street food. Top experiences include snorkeling in cenotes, whale watching, exploring colonial cities like Oaxaca, and touring vibrant local markets. Mexico has a great variety of activities and stunning landscapes</p>
+<ol>
+<li>Explore Chichén Itzá</li>
+<li>Relax on Isla Mujeres</li>
+<li>Visit Xcaret</li>
+<li>Food tour in Mexico City</li>
+<li>Snorkel in clear waters</li>
+</ol>
+</section>
+
+<section id="Travel Tips">
+<h2>Travel Tips</h2>
+<p>Tipping in Mexico is customary, with 10–20% expected at restaurants and 20–50 pesos for services like housekeeping or bellhops. Use pesos for better value, carry small bills, and tip daily. Safety requires staying aware, avoiding unlit areas at night, and using reputable transport. Basic Spanish is appreciated, and all-inclusive staff usually appreciate cash tips.</p>
+<ul>
+<li>Use pesos</li>
+<li>Drink purified water</li>
+<li>Use safe transport</li>
+<li>Learn basic Spanish</li>
+</ul>
+</section>
+
+<div class="thank-you-box">
+  <h1>Thank You!</h1>
+  <hr>
+  <p>We hope you enjoy planning your trip to Mexico. Safe travels!</p>
+</div>
+
+</body>
+</html>
+
